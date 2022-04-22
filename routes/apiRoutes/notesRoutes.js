@@ -5,11 +5,13 @@ var notes = require('../../db/db');
 const router = require('express').Router();
 
 router.get('/notes', (req, res) => {
+    // show all notes
     let results = notes;
     res.json(results);
 });
 
 router.get('/notes/:id', (req, res) => {
+    // get notes via id
     const result = findById(req.params.id, notes);
     if (result) {
     res.json(result);
@@ -19,7 +21,7 @@ router.get('/notes/:id', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-    // set id based on what the next index of the array will be
+    // set id with uuid module
     req.body.id = uuidv4();
 
     // if any data in req.body is incorrect, send 400 error back
@@ -33,6 +35,7 @@ router.post('/notes', (req, res) => {
 });
 
 router.delete('/notes/:id', (req, res) => {
+    // delete individual note
     console.log(notes)
     const results = deleteById(req.params.id, notes);
     if (results) {
