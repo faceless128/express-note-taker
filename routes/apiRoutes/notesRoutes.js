@@ -36,11 +36,9 @@ router.post('/notes', (req, res) => {
 
 router.delete('/notes/:id', (req, res) => {
     // delete individual note
-    console.log(notes)
     const results = deleteById(req.params.id, notes);
     if (results) {
         res.json(results);
-        console.log(notes, results)
     } else {
         res.send(404);
     }
