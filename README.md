@@ -25,4 +25,4 @@ Deploy on a web server and have your notes available anywhere
 ![Screenshot](./screenshot.png)
 
 ## Demonstration
-Here is a [Live Demonstration](https://young-ravine-61746.herokuapp.com/)
+Here is a [Live Demonstration](https://faceless-note-taker.herokuapp.com/)
