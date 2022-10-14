@@ -9,11 +9,19 @@ A simple web deployable note taking application.
 * [Usage](#usage)
 * [Tests](#tests)
 * [Demonstration](#demonstration)
+* [Technologies](#technologies)
 
 ## Features
 View Notes
 Add Notes
 Delete Notes
+
+## Technologies
+HTML
+CSS
+Javascript
+Node.js
+JSON
 
 ## Installation
 Clone the repository and install any dependencies with NPM
